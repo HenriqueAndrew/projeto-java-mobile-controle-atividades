@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="448dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView_adap_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/nmcliente_adapter"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_tituloCliente"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_adap_Sistema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sistema_adapter"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_tituloSistema"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_horaF" />
+
+        <TextView
+            android:id="@+id/textView_adap_tp_ativ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tpatividade_adapter"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_tituloTipo"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_tituloSistema" />
+
+        <TextView
+            android:id="@+id/textView_adap_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/data_adapter"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_tituloData"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_adap_Setor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/setor_adapter"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_tituloSetor"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_horaI" />
+
+        <TextView
+            android:id="@+id/textView_adap_horaI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:text="horaI_adapter"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_tituloHrIni"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_nome" />
+
+        <TextView
+            android:id="@+id/textView_adap_horaF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:text="horaF_adapter"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_tituloHrFin"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_data" />
+
+        <TextView
+            android:id="@+id/textView_adap_ativ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="atividade_adapter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_tituloAtiv"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_tp_ativ" />
+
+        <TextView
+            android:id="@+id/textView_adap_tituloAtiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Atividade:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView_adap_tituloTipo"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_tituloTipo" />
+
+        <TextView
+            android:id="@+id/textView_adap_tituloCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/titulo_adap_cliente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_adap_tituloData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/titulo_adap_data"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_nome"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_adap_tituloHrIni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/titulo_adap_hini"
+            app:layout_constraintStart_toStartOf="@+id/textView_adap_tituloCliente"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_tituloCliente" />
+
+        <TextView
+            android:id="@+id/textView_adap_tituloHrFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/titulo_adap_hfin"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_horaI"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_tituloData" />
+
+        <TextView
+            android:id="@+id/textView_adap_tituloSetor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/titulo_adap_setor"
+            app:layout_constraintStart_toStartOf="@+id/textView_adap_tituloHrIni"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_tituloHrIni" />
+
+        <TextView
+            android:id="@+id/textView_adap_tituloSistema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/titulo_adap_sistema"
+            app:layout_constraintStart_toEndOf="@+id/textView_adap_Setor"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_tituloHrFin" />
+
+        <TextView
+            android:id="@+id/textView_adap_tituloTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/titulo_adap_tipoatend"
+            app:layout_constraintStart_toStartOf="@+id/textView_adap_tituloSetor"
+            app:layout_constraintTop_toBottomOf="@+id/textView_adap_Setor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

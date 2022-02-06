@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Activity Control</string>
+    <string name="registrar_atividade">Record Activity</string>
+    <string name="cliente">Client</string>
+    <string name="nome">Name</string>
+    <string name="nome_cliente">Client name</string>
+    <string name="data_inicial">Initial Date</string>
+    <string name="data_final">Final Date</string>
+    <string name="hora">Hour</string>
+    <string name="data">Date</string>
+    <string name="descricao_da_atividade">Activity Description</string>
+    <string name="hora_inicial">Start Time</string>
+    <string name="hora_final">End Time</string>
+    <string name="salvar">Save</string>
+    <string name="limpar">Clean</string>
+    <string name="erro_nomeCliente">Customer name not informed!</string>
+    <string name="erro_data">Date not informed!</string>
+    <string name="erro_horaInicial">Start time not informed!</string>
+    <string name="erro_horaFinal">End time not informed!</string>
+    <string name="erro_atividade">Activity not informed!</string>
+    <string name="campos_limpos">Clean fields!</string>
+    <string name="aviso_atividadeSalva">Activity recorded successfully!</string>
+    <string name="tipo_atividade">Activity Type</string>
+    <string name="presencial">In person</string>
+    <string name="remota">Remote</string>
+    <string name="erro_tipoAtividade">Type of activity not informed!</string>
+    <string name="remoto">Remote</string>
+    <string name="setor_contabilidade">Accounting</string>
+    <string name="setor_arrecadacao">Collection</string>
+    <string name="setor_rh">Human Resources</string>
+    <string name="setor_adm">Administration</string>
+    <string name="setor">"Sector Served: "</string>
+    <string name="erro_setor">Sector attended not informed!</string>
+    <string name="sistema">System serviced:</string>
+    <string name="govbrCP" translatable="false">GOVBR CP</string>
+    <string name="govbrAR" translatable="false">GOVBR AR</string>
+    <string name="govbrGP" translatable="false">GOVBR GP</string>
+    <string name="govbrLC" translatable="false">GOVBR LC</string>
+    <string name="govbrPP" translatable="false">GOVBR PP</string>
+    <string name="govbrCM" translatable="false">GOVBR CM</string>
+    <string name="govbrAF" translatable="false">GOVBR AF</string>
+    <string name="govbrTP" translatable="false">GOVBR TP</string>
+    <string name="govbrOP" translatable="false">GOVBR OP</string>
+    <string name="govbrTB" translatable="false">GOVBR TB</string>
+    <string name="govbrAS" translatable="false">GOVBR AS</string>
+    <string name="cidadeMOB" translatable="false">CidadeMob</string>
+    <string name="ativ_selecionada">Selected!</string>
+    <string name="nmcliente_adapter" translatable="false">nmClienteAdapter</string>
+    <string name="data_adapter" translatable="false">dataAdapter</string>
+    <string name="setor_adapter" translatable="false">setorAdapter</string>
+    <string name="sistema_adapter" translatable="false">sistemaAdapter</string>
+    <string name="tpatividade_adapter" translatable="false">tpAtividadeAdapter</string>
+    <string name="selecionada_clicklongo">Selected</string>
+    <string name="nome_aluno">Student: Henrique Andrew da Silva</string>
+    <string name="nome_curso">Course: Especialização em Tecnologia Java</string>
+    <string name="e_mail_aluno" translatable="false">E-mail: henriqueandrew1986_@hotmail.com</string>
+    <string name="descricao_app">"Description: Application for management of professional activities performed during the day, related to software for public management that are marketed by the company GOVBR. "</string>
+    <string name="nome_instituicao" translatable="false">UNIVERSIDADE TECNOLOGICA FEDERAL DO PARANA</string>
+    <string name="cadastrar_atividade">Register Activity</string>
+    <string name="consultar_atividades">Consult Activities</string>
+    <string name="nao_cadastrado">Not Registered</string>
+    <string name="sobre_menu_principal">Reference</string>
+    <string name="adicionar_atividade">Add</string>
+    <string name="adicionar">Add</string>
+    <string name="sobre">Reference</string>
+    <string name="foi_clicado">It was clicked!</string>
+    <string name="m_salvar">Save</string>
+    <string name="m_limpar">Clean</string>
+    <string name="editar_atividade">EDIT ACTIVITY</string>
+    <string name="titulo_adap_cliente">Client:</string>
+    <string name="titulo_adap_data">"Date: "</string>
+    <string name="titulo_adap_hini">Start time:</string>
+    <string name="titulo_adap_hfin">End time:</string>
+    <string name="titulo_adap_setor">Sector:</string>
+    <string name="titulo_adap_sistema">System:</string>
+    <string name="titulo_adap_tipoatend">Activity Type:</string>
+    <string name="toast_data">"\nDate: "</string>
+    <string name="toast_hora">"\nHour: "</string>
+    <string name="toast_setor">"\nSector served: "</string>
+    <string name="toast_tipo_atendimento">"\nForm of service: "</string>
+    <string name="toast_sistema">"\nSystem serviced: "</string>
+    <string name="toast_atividade">\n\nActivity: \n</string>
+    <string name="titulo_lista_ativ">ACTIVITIES</string>
+    <string name="ordenar_nome">Sort by name</string>
+    <string name="ordenar_setor">Sort by setor</string>
+    <string name="ordenar_sistema">Order by system</string>
+    <string name="toast_ord_nome">The list was ordered by name</string>
+    <string name="toast_ord_setor">The list was sorted by sector</string>
+    <string name="toast_ord_sistema">The list was sorted by system</string>
+    <string name="confirmar_exclusao">Confirm deletion of:</string>
+    <string name="gui_excluir_atividade">Delete Activity</string>
+    <string name="gui_excluir_sim">YES</string>
+    <string name="gui_excluir_nao">NO</string>
+
+</resources>

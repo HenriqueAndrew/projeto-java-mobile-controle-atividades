@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apresentacao.HomeActivity">
+
+    <TextView
+        android:id="@+id/textViewAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/nome_aluno"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/nome_curso"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAluno"
+        app:layout_constraintStart_toStartOf="@+id/textViewAluno"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAluno" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/e_mail_aluno"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCurso"
+        app:layout_constraintStart_toStartOf="@+id/textViewCurso"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurso" />
+
+    <TextView
+        android:id="@+id/textViewObjetivoApp"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="48dp"
+        android:justificationMode="inter_word"
+        android:text="@string/descricao_app"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmail"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoUTFPR"
+        android:layout_width="210dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:cropToPadding="false"
+        app:layout_constraintEnd_toEndOf="@+id/textViewObjetivoApp"
+        app:layout_constraintStart_toStartOf="@+id/textViewObjetivoApp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewObjetivoApp"
+        app:srcCompat="@mipmap/logo_utfpr_foreground" />
+
+    <TextView
+        android:id="@+id/textViewNomeInstituicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/nome_instituicao"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewLogoUTFPR"
+        app:layout_constraintStart_toStartOf="@+id/imageViewLogoUTFPR"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogoUTFPR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apresentacao.CadastroActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textTituloFuncao"
+            android:layout_width="372dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/registrar_atividade"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTituloCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/cliente"
+            app:layout_constraintStart_toStartOf="@+id/textTituloFuncao"
+            app:layout_constraintTop_toBottomOf="@+id/textTituloFuncao" />
+
+        <EditText
+            android:id="@+id/editTextNomeCliente"
+            android:layout_width="375dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName|textCapWords"
+            app:layout_constraintStart_toStartOf="@+id/textTituloCliente"
+            app:layout_constraintTop_toBottomOf="@+id/textTituloCliente" />
+
+        <TextView
+            android:id="@+id/textTituloData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/data"
+            app:layout_constraintStart_toStartOf="@+id/editTextNomeCliente"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeCliente" />
+
+        <EditText
+            android:id="@+id/editTextData"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintStart_toStartOf="@+id/textTituloData"
+            app:layout_constraintTop_toBottomOf="@+id/textTituloData" />
+
+        <TextView
+            android:id="@+id/textTituloHoraInicial"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginLeft="164dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/hora_inicial"
+            app:layout_constraintStart_toEndOf="@+id/textTituloData"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeCliente" />
+
+        <EditText
+            android:id="@+id/editTextHoraInicial"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="time"
+            app:layout_constraintEnd_toEndOf="@+id/textTituloHoraInicial"
+            app:layout_constraintStart_toStartOf="@+id/textTituloHoraInicial"
+            app:layout_constraintTop_toBottomOf="@+id/textTituloHoraInicial" />
+
+        <TextView
+            android:id="@+id/textTituloAtividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/descricao_da_atividade"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxPresencial"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxPresencial" />
+
+        <EditText
+            android:id="@+id/editTextAtividade"
+            android:layout_width="375dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@+id/textTituloAtividade"
+            app:layout_constraintTop_toBottomOf="@+id/textTituloAtividade" />
+
+        <EditText
+            android:id="@+id/editTextHoraFinal"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="time"
+            app:layout_constraintEnd_toEndOf="@+id/editTextNomeCliente"
+            app:layout_constraintStart_toStartOf="@+id/textTituloHoraFinal"
+            app:layout_constraintTop_toBottomOf="@+id/textTituloHoraFinal" />
+
+        <TextView
+            android:id="@+id/textTituloHoraFinal"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/hora_final"
+            app:layout_constraintEnd_toEndOf="@+id/editTextNomeCliente"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeCliente" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPresencial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/presencial"
+            app:layout_constraintStart_toStartOf="@+id/textTipoAtividade"
+            app:layout_constraintTop_toBottomOf="@+id/textTipoAtividade" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRemoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/remoto"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxPresencial"
+            app:layout_constraintTop_toBottomOf="@+id/textTipoAtividade" />
+
+        <TextView
+            android:id="@+id/textTipoAtividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tipo_atividade"
+            app:layout_constraintStart_toStartOf="@+id/spinnerSistema"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSistema" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSetores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextHoraFinal"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSetor">
+
+            <RadioButton
+                android:id="@+id/radioButtonContabilidade"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/setor_contabilidade" />
+
+            <RadioButton
+                android:id="@+id/radioButtonArrecadacao"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/setor_arrecadacao" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRH"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/setor_rh" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAdm"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/setor_adm" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewSetor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/setor"
+            app:layout_constraintStart_toStartOf="@+id/editTextHoraInicial"
+            app:layout_constraintTop_toBottomOf="@+id/editTextHoraInicial" />
+
+        <TextView
+            android:id="@+id/textViewSistema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/sistema"
+            app:layout_constraintStart_toStartOf="@+id/editTextData"
+            app:layout_constraintTop_toBottomOf="@+id/editTextData" />
+
+        <Spinner
+            android:id="@+id/spinnerSistema"
+            android:layout_width="184dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:spinnerMode="dialog"
+            app:layout_constraintStart_toStartOf="@+id/textViewSistema"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSistema" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
